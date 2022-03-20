@@ -1,0 +1,30 @@
+.pagination{
+
+}
+.pagination__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 0 -5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__item{
+    padding: 0 5px;
+}
+.pagination__item.--active .pagination__link{
+    background: $gray-900;
+    color: $white;
+}
+.pagination__link{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray-500;
+    font-size: 14px;
+    font-weight: 500;
+}

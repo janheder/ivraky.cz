@@ -1,0 +1,57 @@
+// Custom js plugins and scripts
+
+script(src="/js/micromodal.min.js")
+script(src="/js/cookiebar.min.js")
+script(src="/js/lazysizes.min.js")
+script(src="/js/instant.page.min.js")
+
+script(src="/js/swiffy-slider.min.js")
+script(src="/js/smoothscroll.min.js")
+
+script(src="/js/scripts.js")
+
+
+// PWA init
+script(src="/upup.min.js")
+script.
+    UpUp.start({
+    'content-url': 'offline.html',
+    'assets': ['/img/logo.svg']
+    });
+
+
+    document.getElementById('searchbox').addEventListener('keyup', function (e) {
+        if(this.value.length >=1){
+            document.getElementById('searchAutocomplete').classList.add('--active');
+        }else{
+            document.getElementById('searchAutocomplete').classList.remove('--active');
+        }
+    });
+    document.getElementById('searchbox').addEventListener('click', function (e) {
+        if(this.value.length >=1){
+            document.getElementById('searchAutocomplete').classList.add('--active');
+        }else{
+            document.getElementById('searchAutocomplete').classList.remove('--active');
+        }
+    });
+
+
+script.
+    function imageClick(imageNumber) {
+        setTimeout(() => {
+            //Find the slider element
+            const sliderElement = document.getElementById('pgalleryModal');
+            //Slide to he right image
+            swiffyslider.slideTo(sliderElement, imageNumber);
+            //Listen to slide end and set focus to the container to enable keyboard navigation
+            swiffyslider.onSlideEnd(sliderElement, () => sliderElement.querySelector(".slider-container").focus());
+        }, 300)
+    }
+
+    function thumbHover(imageNumber) {
+        //Find the slider element
+        const sliderElement = document.getElementById('pgallery');
+        //Slide to he right image
+        swiffyslider.slideTo(sliderElement, imageNumber)
+    }
+    

@@ -1,0 +1,37 @@
+.products-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-grid .product-card{
+    width: 25%;
+    outline: 1px solid $gray-300;
+}
+.products-count{
+    color: $gray-500;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 767px){
+    .products-grid{
+
+    }
+    .products-grid .product-card{
+        width: 50%;
+    }
+    .products-count{
+        display: none;
+    }
+}
+@media screen and (max-width: 575px){
+    .products-grid{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+.product-slider{
+    
+    grid-gap: 1px;
+    background: $gray-300;
+    outline: 1px solid $gray-300;
+}

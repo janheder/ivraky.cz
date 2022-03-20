@@ -1,2 +1,0 @@
-# ivraky.cz
- 

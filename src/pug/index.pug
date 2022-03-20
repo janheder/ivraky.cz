@@ -1,0 +1,66 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "index";
+    include template/_head.pug  
+
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_carousel.pug
+
+
+
+
+            section.products
+                .container
+                    h1 Novinky a akční ceny
+
+                    .swiffy-slider.slider-item-show4.slider-item-nogap
+                        ul.slider-container.product-slider
+                            li
+                                include components/_product-card.pug
+                            li
+                                include components/_product-card.pug
+                            li
+                                include components/_product-card.pug
+                            li
+                                include components/_product-card.pug
+                            li
+                                include components/_product-card.pug
+
+
+                        button(type="button" class="slider-nav")
+                        button(type="button" class="slider-nav slider-nav-next")
+
+            section.products.--special
+                .container
+                    h1 Novinky a akční ceny
+
+                    .swiffy-slider.slider-item-show4.slider-item-nogap
+                        ul.slider-container.product-slider
+                            li
+                                include components/_product-card-special.pug
+                            li
+                                include components/_product-card-special.pug
+                            li
+                                include components/_product-card-special.pug
+                            li
+                                include components/_product-card-special.pug
+                            li
+                                include components/_product-card-special.pug
+
+
+                        button(type="button" class="slider-nav")
+                        button(type="button" class="slider-nav slider-nav-next")
+                        
+                                
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  
