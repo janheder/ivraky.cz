@@ -26,8 +26,12 @@
 
 .cart-item{
     display: flex;
-    padding: 40px 0;
-    border-bottom: 1px solid $gray-300;
+    padding: 20px;
+    border: 1px solid $gray-300;
+    margin-top: -1px;
+}
+.cart-item-price{
+    text-align: right;
 }
 .cart-item.--code{
     .cart-item-price-pc{
@@ -39,8 +43,8 @@
 }
 .cart-item-thumb-wrap{
     position: relative;
-    width: 140px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     padding-left: 0;
     flex-shrink: 0;
 }
@@ -61,13 +65,17 @@
 .cart-item-content{
     padding-left: 20px;
     flex-grow: 1;
+    display: flex;
 }
 .cart-item-main{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .cart-item-name{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     flex-grow: 1;
     color: $gray-900;
     font-weight: 500;
@@ -98,12 +106,14 @@
     color: $gray-500;
     flex-shrink: 0;
     padding-left: 20px;
+    font-size: 13px;
 }
 .cart-item-price, .cart-item-code-price{
     font-weight: 500;
     color: $red-500;
     padding-left: 20px;
     flex-shrink: 0;
+    font-size: 16px;
 }
 .cart-item-bottom{
     display: flex;
@@ -140,6 +150,7 @@
 .cart-table__footer{
     padding: 0px 0 20px 0;
     display: flex;
+    justify-content: space-between;
 }
 .cart-table__footer-link{
     display: flex;
@@ -281,13 +292,9 @@
     color: $green-500;
 }
 .cart-table-personal{
-    border: 1px solid $gray-300;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -11px;
-    padding: 40px 20px;
+    padding: 40px 0px;
     margin-bottom: 40px;
 }
 .cart-table-personal .form-group{
@@ -323,29 +330,44 @@
     margin-bottom: 10px;
 }
 .cart-aside__table{
-    padding: 10px 0;
+    padding: 0px 0;
+    border: 1px solid $gray-300;
+    margin-bottom: 20px;
 }
 .cart-aside__row{
-    padding: 5px 0;
+    padding: 5px 20px;
+    padding-top: 15px;
     display: flex;
+    flex-wrap: wrap;
+}
+.cart-aside__table-tr{
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 5px;
 }
 .cart-aside__table-th{
     flex-grow: 1;
 }
 .cart-aside__table-td{
     text-align: right;
+    font-weight: 500;
 }
 
 .cart-aside__row.--main{
-    padding: 20px 0;
-    margin-top: 20px;
-    border-top: 6px solid $gray-100;
+    padding: 18px 20px;
+    margin-top: 10px;
+    background: $gray-100;
 
     .cart-aside__table-th{
-        font-size: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
     }
     .cart-aside__table-td{
-        font-size: 20px;
+        font-size: 17px;
+        text-transform: uppercase;
         color: $red-500;
         font-weight: 500;
         display: flex;
@@ -353,7 +375,7 @@
         text-align: right;
     }
     .cart-aside__table-td small{
-        font-size: 13px;
+        font-size: 12px;
         color: $gray-500;
         font-weight: 400;
     }
@@ -367,9 +389,8 @@
     font-weight: 500;
 }
 .cart-aside__login{
-    padding: 30px;
+    padding: 20px;
     border: 1px solid $gray-300;
-    border-top: 4px solid $gray-900;
     margin-bottom: 40px;
     display: flex;
 }
@@ -382,7 +403,7 @@
 .cart-aside__login-content{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 .cart-aside__login-title{
     font-size: 18px;
@@ -390,8 +411,19 @@
 
 }
 .cart-aside__login-text{
-    font-size: 16px;
+    font-size: 14px;
     color: $gray-500;
+    margin-bottom: 20px;
+}
+.cart-aside__login-contact{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 15px;
+        margin-right: 12px;
+    }
 }
 .cart-aside__code{
     margin-bottom: 40px;
@@ -557,6 +589,9 @@
 .cart-empty__title{
     padding: 40px 0 5px 0;
     text-align: center;
+    font-family: $font-family-secondary;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 .cart-empty__text{
     max-width: 380px;
@@ -570,6 +605,7 @@
     background: $gray-100;
     margin-top: 40px;
     max-width: 520px;
+    border: 1px solid $gray-900;
 }
 .cart-empty__alert img{
 

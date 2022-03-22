@@ -98,28 +98,28 @@
           <div id="navToggle"><span></span></div><a class="logo" href="/"><img src="/img/logo.png" alt="ivraky.cz" title="ivraky.cz" width="150" height="50"></a>
           <div class="search"> 
             <div class="search-wrapper">    
-              <form class="search-form" method="post"> 
+              <form class="search-form" method="post" action="/submit"> 
                 <input class="search__input" type="text" id="searchbox" autocomplete="off" placeholder="Vyhledávání">
-                <button class="search__button">Celý katalog</button>
-                <button class="search__button --model">Tento model</button>
+                <button class="search__button" type="submit">Celý katalog</button>
+                <button class="search__button --model" type="submit" formaction="/elsewhere">Tento model</button>
                 <div class="searchAutocomplete" id="searchAutocomplete">
                   <div class="searchAutocomplete__section"> 
                     <div class="searchAutocomplete__title">Produkty</div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
                   </div>
                   <div class="searchAutocomplete__section"> 
                     <div class="searchAutocomplete__title">Kategorie</div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <div id="searchToggle"><img src="/img/icons/search-big.svg" alt="Vyhledávání"></div>
+          <div id="searchToggle"><img src="/img/icons/search-white.svg" alt="Vyhledávání"></div>
           <div class="header-nav">
             <div class="user" data-micromodal-trigger="modal-login">
               <div class="user__icon"><img src="/img/icons/user-white.svg" alt="Přihlášení"></div>
@@ -175,324 +175,35 @@
     <div id="darkBackdrop"></div>
     <nav id="mainNav">
       <div class="container">
-        <div class="nav-item"> <a class="nav-link" href="produkt-vypis.html">Akční nabídka</a></div>
-        <div class="nav-item"> <a class="nav-link" href="produkt-vypis.html">Rošty</a></div>
-        <div class="nav-item expandable"><a class="nav-linkDesktop" href="produkt-vypis.html">Skříně <img src="/img/icons/cheveron.svg" alt="Rozbalit"></a>
-          <div class="nav-link" id="subToggle-0">Skříně <img src="/img/icons/cheveron.svg" alt="Rozbalit"></div>
-          <div class="nav-submenu" id="sub-0">
-            <div class="nav-submenu__single --all"><a class="nav-submenu__title" href="/produkt-vypis.html">Zobrazit vše</a></div>
-            <div class="container">
-              <div class="row"> 
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="https://ivraky.cz/fotky/kategorie/male/krabicky-a-truhly_1627715004.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <form method="post">
+          <div class="nav-item"> 
+            <select>
+              <option value="">Vyberte značku</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+            </select>
           </div>
-        </div>
-        <div class="nav-item"> <a class="nav-link" href="produkt-vypis.html">Šuplíky</a></div>
-        <div class="nav-item expandable"><a class="nav-linkDesktop" href="produkt-vypis.html">Postele <img src="/img/icons/cheveron.svg" alt="Rozbalit"></a>
-          <div class="nav-link" id="subToggle-1">Postele <img src="/img/icons/cheveron.svg" alt="Rozbalit"></div>
-          <div class="nav-submenu" id="sub-1">
-            <div class="container">
-              <div class="row"> 
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="nav-item"> 
+            <select>
+              <option value="">Vyberte model</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+              <option value="BMW">BMW</option>
+            </select>
           </div>
-        </div>
-        <div class="nav-item"> <a class="nav-link" href="produkt-vypis.html">Komody</a></div>
-        <div class="nav-item expandable"> <a class="nav-linkDesktop" href="produkt-vypis.html">Noční stolky <img src="/img/icons/cheveron.svg" alt="Rozbalit"></a>
-          <div class="nav-link" id="subToggle-2">Noční stolky <img src="/img/icons/cheveron.svg" alt="Rozbalit"></div>
-          <div class="nav-submenu" id="sub-2">
-            <div class="container">
-              <div class="row"> 
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="nav-item expandable"><a class="nav-linkDesktop" href="produkt-vypis.html">Dřevěné krabičky <img src="/img/icons/cheveron.svg" alt="Rozbalit"></a>
-          <div class="nav-link" id="subToggle-3">Dřevěné krabičky <img src="/img/icons/cheveron.svg" alt="Rozbalit"></div>
-          <div class="nav-submenu" id="sub-3">
-            <div class="container">
-              <div class="row"> 
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="nav-submenu__single">   <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="" title="">
-                    <ul> 
-                      <li> <a class="nav-submenu__title" href="/produkt-vypis.html">Rošty</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Noční stolky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné krabičky</a></li>
-                      <li> <a class="nav-submenu__link" href="/produkt-vypis.html">Dřevěné boxy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="nav-item"> <a class="nav-link" href="produkt-vypis.html">Dřevěné boxy</a></div>
+          <button class="btn">Vyhledat</button>
+        </form>
         <div class="nav-item-backdrop"></div>
       </div>
     </nav>
     <main>
       <div class="breadcrumbs">
-        <div class="container"><a class="breadcrumbs__item" href="/">Domů</a><img class="breadcrumbs__separator" src="/img/icons/cheveron.svg" alt="&gt;"><a class="breadcrumbs__item" href="/">Dřevěné boxy</a><img class="breadcrumbs__separator" src="/img/icons/cheveron.svg" alt="&gt;"><span class="breadcrumbs__item --active">Dřevěná bedna na 2 vína CARMEN VI</span></div>
+        <div class="container"><a class="breadcrumbs__item" href="/">Domů</a><img class="breadcrumbs__separator" src="/img/icons/cheveron.svg" alt="&gt;"><a class="breadcrumbs__item" href="/">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
       </div>
       <section class="product-detail">
         <div class="container">
@@ -516,12 +227,6 @@
                 <div class="product-card__tagsRight">
                   <div class="product-card__tagSingle"> 
                     <div class="tag --circleSale">-18%</div>
-                  </div>
-                  <div class="product-card__tagSingle"> 
-                    <div class="tag --circle">Doprodej</div>
-                  </div>
-                  <div class="product-card__tagSingle"> 
-                    <div class="tag --free-delivery">Doprava zdarma</div>
                   </div>
                 </div>
                 <div id="productGallery">
@@ -555,39 +260,16 @@
             </div>
             <div class="col-12 col-lg-5">
               <div class="product-detail__info">
-                <h1 class="product-detail__title">Dřevěná bedna na 2 vína CARMEN VI lorem ipsum</h1>
+                <h1 class="product-detail__title">MOTUL 10W-40 4T 5100 ESTER 4L</h1>
                 <div class="product-detail__code">
                   <div>Kód produktu: <span id="product-code">Zvolte variantu</span></div>
                 </div>
-                <p class="product-detail__text">Nabízíme náš dřevěný CARMEN VI BOX / KONTEJNER - přírodní, ekologický kontejner. Výsuvný box na dvě vína z přírodního dřeva s rukojetí - rukojetí z přírodního... <a href="#productDescription">Číst více</a></p>
+                <p class="product-detail__text">Olej motorový syntetický, balení 4 litry, specifikace: API SG/SH/SJ/SL/SM, JASO T 903: 2011, MA2... <a href="#productDescription">Číst více</a></p>
                 <form class="product-detail__form" method="post">
-                  <div class="variants" id="variants">
-                    <div class="variants__title">Výběr varianty</div>
-                    <div class="variants__list-wrap">
-                      <div class="variants__list">
-                        <div class="variants__item default --active" data-code="Zvolte variantu" data-stockstatus="default" data-stock="Zvolte variantu" data-priceold="od 1 500 Kč" data-price="od 1 200 Kč" data-pricevat="od 923 Kč"> 
-                          <input type="radio" name="variant-empty" id="variantId" value="123" aria-label="Zvolte variantu" required>
-                          <div class="variants__item-text">Zvolte variantu</div>
-                        </div>
-                        <div class="variants__item" data-code="1" data-stockstatus="active" data-stock="Skladem 10ks" data-priceold="1 500 Kč" data-price="1 200 Kč" data-pricevat="923 Kč"> 
-                          <input type="radio" name="variant" id="variantId1" value="123" aria-label="Černý lak + prosklená dvířka" required><img src="/img/logo.svg" alt="Černý lak + prosklená dvířka" data-src="/img/product-thumb-large.jpg">
-                          <div class="variants__item-text">Černý lak + prosklená dvířka</div>
-                        </div>
-                        <div class="variants__item" data-code="2" data-stockstatus="disabled" data-stock="Nedostupné" data-priceold="150 Kč" data-price="100 Kč" data-pricevat="80 Kč"> 
-                          <input type="radio" name="variant" id="variantId2" value="123" aria-label="Zelená barva s neprůhlednými dvířky" required><img src="/img/product-thumb-small.jpg" alt="Zelená barva s neprůhlednými dvířky" data-src="/img/product-thumb-large.jpg">
-                          <div class="variants__item-text">Zelená barva s neprůhlednými dvířky</div>
-                        </div>
-                        <div class="variants__item" data-code="3" data-stockstatus="disabled" data-stock="Nedostupné" data-price="1000 Kč" data-pricevat="800 Kč"> 
-                          <input type="radio" name="variant" id="variantId3" value="123" aria-label="Zelená barva" required><img src="/img/product-thumb-small.jpg" alt="Zelená barva" data-src="/img/product-thumb-large.jpg">
-                          <div class="variants__item-text">Zelená barva</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-detail__stock" id="stock" data-status="default">Pro dostupnost zvolte variantu    </div>
+                  <div class="product-detail__stock" id="stock" data-status="active">Skladem</div>
                   <div class="product-detail__price"> 
-                    <div class="product-detail__priceMain"><span id="price-old">od 1 200 Kč</span> <span id="price-main">od 1 118 Kč</span></div>
-                    <div class="product-detail__priceVAT"><span id="price-vat">od 923,97 Kč</span> bez DPH</div>
+                    <div class="product-detail__priceMain"><span id="price-old">1 200 Kč</span> <span id="price-main">1 118 Kč</span></div>
+                    <div class="product-detail__priceVAT"><span id="price-vat">923,97 Kč</span> bez DPH</div>
                   </div>
                   <div class="product-detail__cta"> 
                     <div class="product-detail__qty stepper" id="qty-stepper"> <span class="minus">–</span>
@@ -633,7 +315,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section>
         <div class="container"> 
           <h1>Příslušenství</h1>
           <div class="products-grid">
@@ -658,11 +340,44 @@
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
                       </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost">Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
                       </div>
                       <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
                       </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
@@ -703,12 +418,6 @@
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
                       </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
-                      </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
                   </div>
@@ -747,57 +456,6 @@
                     <div class="product-card__tagsRight">
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost">Do košíku</button>
-                  </form>
-                </div></a></div>
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
                       </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
@@ -820,7 +478,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section>
         <div class="container"> 
           <h1>Související</h1>
           <div class="products-grid">
@@ -845,11 +503,44 @@
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
                       </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost">Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
                       </div>
                       <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
                       </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
@@ -890,12 +581,6 @@
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
                       </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
-                      </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
                   </div>
@@ -935,12 +620,6 @@
                       <div class="product-card__tagSingle"> 
                         <div class="tag --circleSale">-18%</div>
                       </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
-                      </div>
                     </div>
                     <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
                   </div>
@@ -959,51 +638,20 @@
                     <button class="btn btn-ghost">Do košíku</button>
                   </form>
                 </div></a></div>
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circle">Doprodej</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --free-delivery">Doprava zdarma</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost">Do košíku</button>
-                  </form>
-                </div></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="social">
+        <div class="container">
+          <div class="instagram-wrap">
+            <div class="row"> 
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+              <div class="col-4 col-md-2"><a class="instagram-single" href="#"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/contact.jpg" alt="#" width="220" height="220"></a></div>
+            </div>
           </div>
         </div>
       </section>

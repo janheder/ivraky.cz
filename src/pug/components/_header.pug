@@ -22,16 +22,16 @@ header
 
             .search 
                 .search-wrapper     
-                    form.search-form(method="post") 
+                    form.search-form(method="post" action="/submit") 
                         input.search__input(type="text" id="searchbox" autocomplete="off" placeholder="Vyhledávání")
-                        button.search__button Celý katalog
-                        button.search__button.--model Tento model
+                        button.search__button(type="submit") Celý katalog
+                        button.search__button.--model(type="submit" formaction="/elsewhere") Tento model
                         include _searchAutocomplete.pug
 
 
 
             div(id="searchToggle")
-                img(src="/img/icons/search-big.svg" alt="Vyhledávání")
+                img(src="/img/icons/search-white.svg" alt="Vyhledávání")
 
             .header-nav
 

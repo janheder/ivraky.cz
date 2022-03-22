@@ -10,7 +10,8 @@ input, select{
     font-size: 14px;
     background-color: $white;
     color: $gray-900;
-    background: linear-gradient(180deg, rgba(247, 247, 247, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    /*background: linear-gradient(180deg, rgba(247, 247, 247, 0.6) 0%, rgba(255, 255, 255, 0) 100%);*/
+    background: white;
 }
 .form-group input{
 
@@ -18,9 +19,9 @@ input, select{
         border-color: $green-500;
     }
 
-    &:required:invalid:not(:placeholder-shown):not([type='checkbox']){
+    /*&:required:invalid:not(:placeholder-shown):not([type='checkbox']){
         border-color: $red-500;
-    }
+    }*/
 }
 select{
     appearance: none;
@@ -46,7 +47,7 @@ button{
 .form-group{
     padding: 0;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
 }
@@ -54,8 +55,13 @@ button{
     padding-bottom: 2px;
 }
 .form-group label a[data-micromodal-trigger]{
-    color: $green-500;
+    color: $gray-1000;
     cursor: pointer;
+    text-decoration: underline;
+
+    &:hover{
+
+    }
 }
 .form-group .label-subtext{
     font-size: 14px;
@@ -107,14 +113,17 @@ button{
 }
 
 .form-group.--checkbox{
-
-}
+    max-width: 100%;
+}   
 .form-group.--checkbox > label{
     padding: 14px 20px 14px 45px;
     height: auto;
     border: 1px solid $gray-300;
     display: block;
     cursor: pointer;
+    max-width: 540px;
+    background: white;
+
     span{
         color: $gray-500;
     }
@@ -163,17 +172,17 @@ button{
 
 .form-subtitle{
     margin-top: 60px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    padding-bottom: 15px;
+    font-size: 24px;
     border-bottom: 1px solid $gray-300;
     font-weight: 500;
     width: 100%;
-    max-width: 540px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: $font-family-secondary;
 }
 .form-alert{
     width: 100%;
-    max-width: 540px;
     margin-top: 20px; 
     background: rgba($green-500,0.1);
     padding: 5px 10px;

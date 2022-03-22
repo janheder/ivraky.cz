@@ -87,7 +87,7 @@ header{
 #navToggle span{
     height: 2px;
     width: 18px;
-    background: #06070E;
+    background: white;
     display: block;
     position: absolute;
     top: 50%;
@@ -104,7 +104,7 @@ header{
         left: 0;
         height: 100%;
         width: 100%;
-        background: $gray-900;
+        background: white;
         transform: translate(0%, -300%);
         transition: 0.3s all ease;
     }
@@ -134,7 +134,7 @@ header{
     padding: 0 60px;
 }
 .search-wrapper{
-    max-width: 480px;
+    max-width: 540px;
     min-width: auto;
     width: 100%;
 }
@@ -161,12 +161,15 @@ header{
     align-items: center;
     padding: 0;
     margin-right: 3px;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
-    padding: 0 20px;
+    padding: 0 17px;
     margin-top: 3px;
 }
-
+.search__button.--model{
+    color: $gray-1000;
+    background: $yellow-500;
+}
 .header-nav{
     display: flex;
 }
@@ -174,7 +177,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 0;
+    margin: 0 0px 0 0;
     cursor: pointer;
     position: relative;
 }
@@ -316,24 +319,28 @@ body.--user-active .header-nav .user__dropdown{
     .header-main{
         padding: 0;
         height: 52px;
-        background: $white;
         position: fixed;
         z-index: 5;
         top: 0;
         left: 0;
         width: 100%;
-        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.05);
+        background: $gray-900;
     }
     .header-main .container{
         padding: 0;
         height: 100%;
     }
-    .logo img{
-        margin-left: 10px;
+    .logo {
+        height: auto;
+        width: auto;
+        margin-top: 16px;
+        margin-bottom: 0;
+        z-index: 9;
     }
     .logo img{
-        height: 34px;
+        height: 68px;
         width: auto;
+        margin-left: 0px;
     }
     #navToggle, #searchToggle{
         display: flex;
@@ -403,7 +410,7 @@ body.--user-active .header-nav .user__dropdown{
         display: none;
     }
     .header-nav .cart__number{ 
-        border: 2px solid $white;
+        border: 2px solid $gray-1000;
         top: 25px;
         left: 24px;
     }

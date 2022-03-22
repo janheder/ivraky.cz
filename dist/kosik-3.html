@@ -117,28 +117,28 @@
           <div id="navToggle"><span></span></div><a class="logo" href="/"><img src="/img/logo.png" alt="ivraky.cz" title="ivraky.cz" width="150" height="50"></a>
           <div class="search"> 
             <div class="search-wrapper">    
-              <form class="search-form" method="post"> 
+              <form class="search-form" method="post" action="/submit"> 
                 <input class="search__input" type="text" id="searchbox" autocomplete="off" placeholder="Vyhledávání">
-                <button class="search__button">Celý katalog</button>
-                <button class="search__button --model">Tento model</button>
+                <button class="search__button" type="submit">Celý katalog</button>
+                <button class="search__button --model" type="submit" formaction="/elsewhere">Tento model</button>
                 <div class="searchAutocomplete" id="searchAutocomplete">
                   <div class="searchAutocomplete__section"> 
                     <div class="searchAutocomplete__title">Produkty</div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">Dřevěná bedna na 2 vína CARMEN VI</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-detail.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
                   </div>
                   <div class="searchAutocomplete__section"> 
                     <div class="searchAutocomplete__title">Kategorie</div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
-                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">Dřevěné krabičky</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+                    <div class="searchAutocomplete__item"> <a class="searchAutocomplete__link" href="/produkt-vypis.html">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <div id="searchToggle"><img src="/img/icons/search-big.svg" alt="Vyhledávání"></div>
+          <div id="searchToggle"><img src="/img/icons/search-white.svg" alt="Vyhledávání"></div>
           <div class="header-nav">
             <div class="user" data-micromodal-trigger="modal-login">
               <div class="user__icon"><img src="/img/icons/user-white.svg" alt="Přihlášení"></div>
@@ -196,20 +196,20 @@
       <section class="cart-heading">
         <div class="container">
           <div class="cart-heading__item --complete">
-            <div class="cart-heading__icon"><img src="/img/icons/cart-big.svg" alt="1. Nákupní košík"></div>
-            <div class="cart-heading__title">1. Nákupní košík</div>
+            <div class="cart-heading__icon">1</div>
+            <div class="cart-heading__title">Nákupní košík</div>
           </div>
           <div class="cart-heading__item --complete">
-            <div class="cart-heading__icon"><img src="/img/icons/car.svg" alt="2. Doprava a platba"></div>
-            <div class="cart-heading__title">2. Doprava a platba</div>
+            <div class="cart-heading__icon">2</div>
+            <div class="cart-heading__title">Doprava a platba</div>
           </div>
           <div class="cart-heading__item --active">
-            <div class="cart-heading__icon"><img src="/img/icons/personal-data.svg" alt="3. Osobní údaje"></div>
-            <div class="cart-heading__title">3. Osobní údaje</div>
+            <div class="cart-heading__icon">3</div>
+            <div class="cart-heading__title">Osobní údaje</div>
           </div>
           <div class="cart-heading__item">
-            <div class="cart-heading__icon"><img src="/img/icons/summary.svg" alt="4. Shrnutí objednávky"></div>
-            <div class="cart-heading__title">4. Shrnutí objednávky</div>
+            <div class="cart-heading__icon">4</div>
+            <div class="cart-heading__title">Shrnutí objednávky</div>
           </div>
         </div>
       </section>
@@ -332,7 +332,9 @@
                   </div>
                   <div class="cart-table__footer"><a class="cart-table__footer-link" href="/"> 
                       <div class="cart-table__footer-icon"><img src="/img/icons/cheveron.svg" alt="Krok zpět"></div>
-                      <div class="cart-table__footer-text">Krok zpět</div></a></div>
+                      <div class="cart-table__footer-text">Krok zpět</div></a>
+                    <button class="btn --cart" name="nextstep" form="cart-form-user">Souhrn objednávky <img src="/img/icons/cheveron.svg" alt="Pokračovat"></button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -355,13 +357,11 @@
                 </div>
                 <div class="cart-aside__free-shipping">Nakupte ještě za 6 237 Kč a máte dopravu zdarma</div>
                 <div class="cart-aside__login"> 
-                  <div class="cart-aside__login-icon"> <img src="/img/icons/user.svg" alt="Už máte svůj účet?"></div>
                   <div class="cart-aside__login-content"> 
-                    <div class="cart-aside__login-title">Už máte svůj účet?</div>
-                    <div class="cart-aside__login-text"><a href="#">Zaregistrujte se</a>, nebo <a href="#" data-micromodal-trigger="modal-login">se přihlaste</a> pro jednodušší nákup.</div>
+                    <div class="cart-aside__login-title">Potřebujete s něčím poradit?</div>
+                    <div class="cart-aside__login-text">Rádi vám pomůžeme. Po–Pá 9:00–17:00.</div><a class="cart-aside__login-contact" href="tel:+420713859698"><img src="/img/icons/phone.svg"> +420 713 859 698</a><a class="cart-aside__login-contact" href="mailto:info@email.cz"><img src="/img/icons/envelope.svg"> info@email.cz</a>
                   </div>
                 </div>
-                <button class="btn --cart" name="nextstep" form="cart-form-user">Souhrn objednávky <img src="/img/icons/cheveron-white.svg" alt="Pokračovat"></button>
               </aside>
             </div>
           </div>

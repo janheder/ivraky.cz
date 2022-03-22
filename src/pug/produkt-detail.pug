@@ -31,10 +31,6 @@ html(lang=lang)
                                 .product-card__tagsRight
                                     .product-card__tagSingle 
                                         .tag.--circleSale -18%
-                                    .product-card__tagSingle 
-                                        .tag.--circle Doprodej
-                                    .product-card__tagSingle 
-                                        .tag.--free-delivery Doprava zdarma
 
 
 
@@ -80,44 +76,19 @@ html(lang=lang)
 
                         .col-12.col-lg-5
                             .product-detail__info
-                                h1.product-detail__title Dřevěná bedna na 2 vína CARMEN VI lorem ipsum
+                                h1.product-detail__title #{ProductName}
                                 .product-detail__code
                                     div Kód produktu: #[span(id="product-code") Zvolte variantu]
                                     
-                                p.product-detail__text Nabízíme náš dřevěný CARMEN VI BOX / KONTEJNER - přírodní, ekologický kontejner. Výsuvný box na dvě vína z přírodního dřeva s rukojetí - rukojetí z přírodního... #[a(href="#productDescription") Číst více]
+                                p.product-detail__text Olej motorový syntetický, balení 4 litry, specifikace: API SG/SH/SJ/SL/SM, JASO T 903: 2011, MA2... #[a(href="#productDescription") Číst více]
+                                
                                 form.product-detail__form(method="post")
-                                    .variants(id="variants")
-                                        .variants__title Výběr varianty
-          
-                                        .variants__list-wrap
-                                            .variants__list
 
-                                                .variants__item.default.--active(data-code="Zvolte variantu" data-stockstatus="default" data-stock="Zvolte variantu" data-priceold="od 1 500 Kč" data-price="od 1 200 Kč" data-pricevat="od 923 Kč") 
-                                                    input(type="radio" name="variant-empty" id="variantId" value="123" aria-label="Zvolte variantu" required)
-                                                    .variants__item-text Zvolte variantu
-
-                                                .variants__item(data-code="1" data-stockstatus="active" data-stock="Skladem 10ks" data-priceold="1 500 Kč" data-price="1 200 Kč" data-pricevat="923 Kč") 
-                                                    input(type="radio" name="variant" id="variantId1" value="123" aria-label="Černý lak + prosklená dvířka" required)
-                                                    img(src="/img/logo.svg" alt="Černý lak + prosklená dvířka" data-src="/img/product-thumb-large.jpg")
-                                                    .variants__item-text Černý lak + prosklená dvířka
-
-                                                .variants__item(data-code="2" data-stockstatus="disabled" data-stock="Nedostupné" data-priceold="150 Kč" data-price="100 Kč" data-pricevat="80 Kč") 
-                                                    input(type="radio" name="variant" id="variantId2" value="123" aria-label="Zelená barva s neprůhlednými dvířky" required)
-                                                    img(src="/img/product-thumb-small.jpg" alt="Zelená barva s neprůhlednými dvířky" data-src="/img/product-thumb-large.jpg")
-                                                    .variants__item-text Zelená barva s neprůhlednými dvířky
-
-
-                                                .variants__item(data-code="3" data-stockstatus="disabled" data-stock="Nedostupné" data-price="1000 Kč" data-pricevat="800 Kč") 
-                                                    input(type="radio" name="variant" id="variantId3" value="123" aria-label="Zelená barva" required)
-                                                    img(src="/img/product-thumb-small.jpg" alt="Zelená barva" data-src="/img/product-thumb-large.jpg")
-                                                    .variants__item-text Zelená barva
-
-
-                                    .product-detail__stock(id="stock" data-status="default") Pro dostupnost zvolte variantu    
+                                    .product-detail__stock(id="stock" data-status="active") Skladem
 
                                     .product-detail__price 
-                                        .product-detail__priceMain #[span(id="price-old") od 1 200 Kč] #[span(id="price-main") od 1 118 Kč]
-                                        .product-detail__priceVAT #[span(id="price-vat") od 923,97 Kč] bez DPH
+                                        .product-detail__priceMain #[span(id="price-old") 1 200 Kč] #[span(id="price-main") 1 118 Kč]
+                                        .product-detail__priceVAT #[span(id="price-vat") 923,97 Kč] bez DPH
 
                                     .product-detail__cta 
                                         .product-detail__qty.stepper(id="qty-stepper" ) 
@@ -126,7 +97,7 @@ html(lang=lang)
                                             span.plus +
                                         .product-detail__button 
                                             button.btn(name="add-to-cart") #[img(src="/img/icons/cart.svg" alt="Vložit do košíku")] Vložit do košíku
-
+                                   
 
                         .col-12.col-lg-7
                             .product-detail__description(id="productDescription")
@@ -156,7 +127,7 @@ html(lang=lang)
 
 
 
-            section.products
+            section
                 .container  
                     h1 Příslušenství
                     .products-grid
@@ -164,7 +135,7 @@ html(lang=lang)
                         include components/_product-card.pug
                         include components/_product-card.pug
                         include components/_product-card.pug
-            section.products
+            section
                 .container  
                     h1 Související
                     .products-grid

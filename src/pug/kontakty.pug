@@ -13,57 +13,86 @@ html(lang=lang)
             .page
                 section.page-heading
                     .container
-                        h1 Kontakty
+                        h1 Kontaktní informace
                 section.page-content
                     .container 
                         .row 
                             .col-12.col-md-5
                                 .page-content__cell
-                                    h2 Zákaznická linka
-                                    h5 Provozní doba: Po-Pá 8:00 – 14:30
-                                    a.contact-block(href="tel:777800892") +420 777 800 892
-                                    p Na tomto telefonním čísle zjistíte obecné informace o dostupnostech jednotlivých produktů, době dodání, technické specifikace a máte možnost provést telefonickou objednávku zboží. Pokud chcete zjistit stav objednávky, přichystejte si prosím číslo této objednávky pro urychlení komunikace.
-                                    h5 Mimo pracovní dobu, mailově na #[a(href="mailto:info@ivraky.cz") info@ivraky.cz]
+                                    h2 Adresa provozu a prodejny
+                                    ul 
+                                        li Autovrakoviště Sviadnov s.r.o.
+                                        li K čističce 500
+                                        li 739 25 Sviadnov
+
+                                        li IČ: 05477280
+                                        li DIČ: cz05477280
+
+                                .page-content__cell
+                                    h2 Otevírací doba prodejny
+                                    p Po-Pá: 8.00 - 12.00   13.00 - 16.00
+
 
                             .col-12.col-md-2
 
                             .col-12.col-md-5
                                 .page-content__cell
-                                    h2 Velkoobchod
-                                    a.contact-block(href="mailto:ondera@seznam.cz") ondera@seznam.cz
-                                    p Na této mailové adrese, Vám rádi zodpovíme možnosti velkoobchodní spolupráce
+                                    h2 Mapa
 
-                            .col-12.col-md-5
-                                .page-content__cell
-                                    h2 Fakturační adresa
-                                    ul 
-                                        li 
-                                            strong ivraky s.r.o.
-                                        li Lískovecká 2782
-                                        li 73801  Frýdek-Místek
-                                        li
-                                        li IČ: 05844657
-                                        li DIČ: CZ05844657  
-                                        li
-                                        li ivraky s.r.o., C 69595 vedená u Krajského soudu v Ostravě                  
-
-                            .col-12.col-md-2
-
-                            .col-12.col-md-5
-                                .page-content__cell
-                                    h2 Adresa expedičního skladu
-                                    ul 
-                                        li 
-                                            strong Expediční sklad Místek - Beskydská
-                                        li Beskydská 1488 (areál Slezan)
-                                        li 73801  Frýdek-Místek
-                                    a.contact-block(href="tel:777800892") +420 777 800 892
-
-                            .col-12.col-md-12
-                                .page-content__cell
-                                    h2 Kde nás najdete  
                                     .page-content__map
-                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.356419116029!2d18.344653516279678!3d49.66642455142444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f6e091cc7f4d%3A0xcd50128245eff2a6!2zQmVza3lkc2vDoSAxNDg4LCBNw61zdGVrLCA3MzggMDEgRnLDvWRlay1Nw61zdGVr!5e0!3m2!1sen!2scz!4v1623505331730!5m2!1sen!2scz" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy")
+                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.4279866871184!2d18.319627062065976!3d49.70274384192739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f0b7da4bcdff%3A0xe1a41936f714116b!2sAutovrakovi%C5%A1t%C4%9B%20Sviadnov!5e0!3m2!1scs!2scz!4v1647976738329!5m2!1scs!2scz" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy")
+
+
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Kontaktní formulář
+                                    form(action="#")
+                                        .form-group     
+                                            label(for="register-name") Jméno
+                                            input(type="text" id="register-name" name="name" required minlength="2" maxlength="45" placeholder=" ")
+
+                                        .form-group     
+                                            label(for="register-email") Email
+                                            <input type="email" id="register-email" name="email" required minlength="6" maxlength="255" placeholder=" " pattern="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+                                        
+                                        .form-group     
+                                            label(for="register-tel") Telefon 
+                                            <input type="tel" id="register-tel" name="telephone" required placeholder=" " pattern="\d{1,15}">
+
+                                        .form-group     
+                                            label(for="order-text") Text
+                                            textarea(type="text" id="order-text" name="order-text" rows="4" required)
+
+
+                                        .form-group 
+                                            button.btn.--fullWidth(name="register-submit" id="register-submit") Odeslat #[img(src="/img/icons/cheveron-white.svg")]
+
+
+
+                            .col-12.col-md-2
+
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Kontaktní informace
+
+                                    div(style="display: flex; flex-direction: column;align-items: flex-start;")
+                                        a.contact-block(href="tel:606741111") +420 606 741 111
+                                        a.contact-block(href="tel:558655144") +420 558 655 144
+                                        a.contact-block(href="mailto:ivraky@seznam.cz") ivraky@seznam.cz
+
+
+                                .page-content__cell
+                                    h2 Fakturační a korespondenční adresa
+                                    ul 
+                                        li ADX 2000 s.r.o.
+                                        li Ostravská 49
+                                        li 739 25 Sviadnov
+                                        li 
+                                        li IČ: 08426481
+                                        li DIČ: CZ08426481
+            
+
+            
 
                             .col-12.col-md-12
                                 .page-content__cell
@@ -72,8 +101,6 @@ html(lang=lang)
 
 
 
-            include components/_points-section.pug
-            include components/_contact-section.pug
             include components/_social-section.pug
 
 

@@ -1,0 +1,37 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading
+                    .container
+                        h1 náhradní díly pro vozidlo : BMW X2
+                section.page-content
+                    .container 
+                        .katalog-grid
+                            - for (var x=0; x<9; x++)
+                                .katalog-col
+                                    .katalog-title Motor
+
+                                    - for (var i=0; i<9; i++)
+                                        a.katalog-item(href="#")
+                                            .katalog-img-wrap
+                                                img.katalog-img(src="/img/product-thumb-small.jpg" alt=ProductName title=ProductName)
+                                            .katalog-name Filtr
+                                        
+
+
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

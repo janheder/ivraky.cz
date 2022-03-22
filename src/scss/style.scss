@@ -37,7 +37,7 @@ body.cart #navToggle{
     display: none;
 }
 a{
-    color: $green-500;
+    color: $gray-1000;
     text-decoration: none;
 
     &:hover, &:active, &:focus{
@@ -185,4 +185,74 @@ section.products h1{
 
 .page-summary{
 
+}
+
+.katalog-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.katalog-col{
+    display: flex;
+    flex-direction: column;
+}
+.katalog-title{
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 3px solid $gray-300;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.katalog-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray-300;
+    width: 100%;
+    min-height: 50px;
+}
+.katalog-img-wrap{
+
+}
+.katalog-img{
+
+}
+.katalog-name{
+    margin-left: 20px;
+}
+
+.cart-aside__codeInner{
+    display: flex;
+}
+.cart-aside__codeInner .btn{
+    min-height: 50px;
+}
+
+#register-form .form-group.--checkbox>label{
+    max-width: 100%;
+}
+
+.cart-content__form details{
+    background: white;
+    margin-bottom: 40px;
+}
+.cart-content__form summary{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0 20px;
+    height: 54px;
+    margin-bottom: 0px;
+    border: 1px solid #e5e5e5;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $gray-1000;
+    font-weight: 500;
+}
+.cart-content__form .form-group{
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
 }

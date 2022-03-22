@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,9 @@
     flex-wrap: wrap;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   }
+  #modal-login .modal__container {
+    max-width: 540px;
+  }
  .modal__header-img {
     display: flex;
     width: 100%;
@@ -45,16 +48,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     width: 100%;
+    text-align: center;
   }
   
   .modal__title {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1;
+    text-transform: uppercase;
+    font-family: $font-family-secondary;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
   
   .modal__close {
