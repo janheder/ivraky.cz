@@ -256,3 +256,10 @@ section.products h1{
     border: 1px solid #e5e5e5;
     margin-top: -1px;
 }
+.products-bottom{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
