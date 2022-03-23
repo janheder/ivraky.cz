@@ -261,6 +261,7 @@ body.--user-active .header-nav .user__dropdown{
     align-items: center;
     margin: 0 0px 0 30px;
     color: $gray-900;
+    flex-shrink: 0;
 }
 .header-nav .cart__icon{
     border-radius: 50%;
@@ -311,7 +312,15 @@ body.--user-active .header-nav .user__dropdown{
     font-size: 15px;
     font-weight: 500;
 }
-
+@media screen and (max-width: 1250px){
+    .logo {
+        height: 95px;
+        flex-shrink: 0;
+    }
+    .header-main{
+        padding: 15px 0;
+    }
+}
 @media screen and (max-width: 991px){
     header {
         padding-bottom: 52px;

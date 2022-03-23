@@ -21,7 +21,7 @@
 .cart-table-items{
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .cart-item{
@@ -616,7 +616,7 @@
 
 
 @media screen and (max-width: 767px){
-    .cart-table__footer {
+    .cart-aside{
         display: none;
     }
 }

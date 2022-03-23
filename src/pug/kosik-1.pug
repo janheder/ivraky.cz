@@ -70,7 +70,7 @@ html(lang=lang)
 
                                                         .cart-item-stepper.stepper 
                                                             span.minus –
-                                                            input(id="qty-stepper-input-1" class="num_items" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
+                                                            input(id="qty-stepper-input-2" class="num_items" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
                                                             span.plus +
 
                                                         a.cart-item-remove(href="#")   
@@ -108,20 +108,17 @@ html(lang=lang)
                                 .cart-aside__title Shrnutí objednávky
                                 .cart-aside__table 
                                     .cart-aside__row 
-                                        .cart-aside__table-tr Doprava
-                                        .cart-aside__table-th Česká pošta
-                                        .cart-aside__table-td 99 Kč
-
+                                        .cart-aside__table-th Cena zboží
+                                        .cart-aside__table-td #[span(id="goodsprice") 3299] Kč
                                     .cart-aside__row 
-                                        .cart-aside__table-tr Způsob platby
-                                        .cart-aside__table-th Kartou
-                                        .cart-aside__table-td 0 Kč
-
+                                        .cart-aside__table-th Doprava a platba
+                                        .cart-aside__table-td #[span(id="delprice") 332] Kč
                                     .cart-aside__row.--main 
                                         .cart-aside__table-th Celková cena
                                         .cart-aside__table-td 
-                                            div #[span(id="sumprice") 1570] Kč 
-                                            small 1570 včetně DPH
+                                            div #[span(id="sumprice") 3299] Kč 
+                                            small s DPH
+
 
 
 

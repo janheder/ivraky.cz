@@ -28,7 +28,7 @@
 
 body{
     background :$white;
-    color: $gray-900;
+    color: $gray-1000;
     font-family: $font-family-primary;
     overflow-x: hidden;
     font-size: 14px;
@@ -258,7 +258,7 @@ section.products h1{
     color: $gray-1000;
     font-weight: 500;
 }
-.cart-content__form .form-group{
+.cart-content__form details .form-group{
     margin: 0;
     padding: 20px;
     border: 1px solid #e5e5e5;
