@@ -431,3 +431,7 @@ body.--user-active .header-nav .user__dropdown{
         }
     }
 }
+@media screen and (max-width: 991px){
+    .header-nav .user__icon{
+        display: none;
+}
