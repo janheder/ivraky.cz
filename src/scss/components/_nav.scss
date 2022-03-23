@@ -142,7 +142,7 @@ nav .container{
 }
 @media screen and (max-width: 991px){
     nav{
-        background: $white;
+        background: $yellow-500;
         position: fixed;
         top: 0;
         left: 0;
@@ -157,6 +157,11 @@ nav .container{
         overflow-x: hidden;
         overflow-y: auto;
         content-visibility: hidden;
+    }
+    #mainNav form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
     }
     body.--nav-active{
         overflow-y: hidden;
