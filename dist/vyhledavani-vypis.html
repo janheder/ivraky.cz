@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/cookieconsent.css">
     <script type="text/javascript" src="/js/cookieconsent.js" defer></script>
     <script type="text/javascript" src="/js/cookieconsent-init.js" defer></script>
-    <link rel="canonical" href="https://ivraky.pages.dev/produkt-detail">
+    <link rel="canonical" href="https://ivraky.pages.dev/produkt-vypis">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:type" content="website">
     <meta property="og:title" content="ivraky.cz">
@@ -88,7 +88,6 @@
         </div>
       </div>
     </div>
-    <!-- include components/_modal-cart.pug-->
     <header>
       <div class="header-top">
         <div class="container"> 
@@ -205,138 +204,33 @@
       </div>
     </nav>
     <main>
-      <div class="breadcrumbs">
-        <div class="container"><a class="breadcrumbs__item" href="/">Domů</a><img class="breadcrumbs__separator" src="/img/icons/cheveron.svg" alt="&gt;"><a class="breadcrumbs__item" href="/">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+      <div class="category-heading">
+        <div class="breadcrumbs">
+          <div class="container"><a class="breadcrumbs__item" href="/">Domů</a><img class="breadcrumbs__separator" src="/img/icons/cheveron.svg" alt="&gt;"><a class="breadcrumbs__item" href="/">MOTUL 10W-40 4T 5100 ESTER 4L</a></div>
+        </div>
+        <section class="page-heading">
+          <div class="container">
+            <h1>Vyhledávání</h1>
+            <div id="pageDescription"> 
+              <p>Hledáte výraz krabička</p>
+            </div>
+          </div>
+        </section>
       </div>
-      <section class="product-detail">
+      <section class="products">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-7">
-              <div class="product-detail__photos">
-                <div class="product-card__tags">
-                  <div class="product-card__tagSingle">
-                    <div class="tag --sale">Akce</div>
-                  </div>
-                  <div class="product-card__tagSingle">   
-                    <div class="tag --new">Novinka</div>
-                  </div>
-                  <div class="product-card__tagSingle"> 
-                    <div class="tag --recommended">Doporučené</div>
-                  </div>
-                  <div class="product-card__tagSingle"> 
-                    <div class="tag --top">Top</div>
-                  </div>
-                </div>
-                <div class="product-card__tagsRight">
-                  <div class="product-card__tagSingle"> 
-                    <div class="tag --circleSale">-18%</div>
-                  </div>
-                </div>
-                <div id="productGallery">
-                  <div class="swiffy-slider slider-item-ratio slider-item-ratio-1x1 slider-nav-round slider-nav-nodelay" id="pgallery">
-                    <ul class="slider-container product-detail__carousel" id="product-carousel">
-                      <li class="product-detail__carouselLi"><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..."></li>
-                      <li class="product-detail__carouselLi"><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..."></li>
-                      <li class="product-detail__carouselLi"><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..."></li>
-                      <li class="product-detail__carouselLi"><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..."></li>
-                      <li class="product-detail__carouselLi"><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..."></li>
-                    </ul>
-                    <button class="slider-nav" type="button" aria-label="Go previous"></button>
-                    <button class="slider-nav slider-nav-next" type="button" aria-label="Go next"></button>
-                  </div>
-                  <div class="swiffy-slider slider-nav-dark slider-nav-sm slider-nav-chevron slider-item-show4 slider-item-snapstart slider-item-ratio slider-item-ratio-1x1 slider-nav-visible slider-nav-page slider-nav-outside-expand pt-3 d-none d-lg-block">
-                    <ul class="slider-container" id="pgallerythumbs" style="cursor:pointer">
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(0)"></li>
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(1)"></li>
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(2)"></li>
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(3)"></li>
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(4)"></li>
-                      <li><img src="/img/product-thumb-large.jpg" loading="lazy" alt="..." onmouseover="thumbHover(5)"></li>
-                    </ul>
-                    <button class="slider-nav" type="button" aria-label="Go previous"></button>
-                    <button class="slider-nav slider-nav-next" type="button" aria-label="Go next"></button>
-                  </div>
-                </div>
-                <div class="lightbox" id="lightbox"> </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-5">
-              <div class="product-detail__info">
-                <h1 class="product-detail__title">MOTUL 10W-40 4T 5100 ESTER 4L</h1>
-                <div class="product-detail__code">
-                  <div>Kód produktu: <span id="product-code">123</span></div>
-                </div>
-                <p class="product-detail__text">Olej motorový syntetický, balení 4 litry, specifikace: API SG/SH/SJ/SL/SM, JASO T 903: 2011, MA2... <a href="#productDescription">Číst více</a></p>
-                <div class="product-detail__subtitle">Parametry</div>
-                <table class="table product-detail__params">
-                  <tbody>
-                    <tr> 
-                      <td>Číslo dílu</td>
-                      <td>10W404T 5100 4L</td>
-                    </tr>
-                    <tr> 
-                      <td>Výrobce</td>
-                      <td>OLEJE</td>
-                    </tr>
-                    <tr> 
-                      <td>EAN čísla</td>
-                      <td>3374650017969</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <form class="product-detail__form" method="post">
-                  <div class="product-detail__stock" id="stock" data-status="active">Skladem</div>
-                  <div class="product-detail__price"> 
-                    <div class="product-detail__priceMain"><span id="price-old">1 200 Kč</span> <span id="price-main">1 118 Kč</span></div>
-                    <div class="product-detail__priceVAT"><span id="price-vat">923,97 Kč</span> bez DPH</div>
-                  </div>
-                  <div class="product-detail__cta"> 
-                    <div class="product-detail__qty stepper" id="qty-stepper"> <span class="minus">–</span>
-                      <input id="qty-stepper-input" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required><span class="plus">+</span>
-                    </div>
-                    <div class="product-detail__button"> 
-                      <button class="btn" name="add-to-cart"><img src="/img/icons/cart.svg" alt="Vložit do košíku"> Vložit do košíku</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-12 col-lg-7">
-              <div class="product-detail__description" id="productDescription">
-                <h2>Popis produktu</h2>
-                <p>Olej na bázi Technosyntézy® pro čtyřtaktní motory - Ester technology - vyvinutý na esterové bázi. Snadnější řazení. Zlepšená střihová stabilita. Vyhovuje specifikacím JASO MA2, pro optimální výkon mokré spojky. Vhodný i pro katalyzátory. Olej na bázi Technosyntézy® pro čtyřtaktní motory - Ester technology - vyvinutý na esterové bázi. Snadnější řazení. Zlepšená střihová stabilita. Vyhovuje specifikacím JASO MA2, pro optimální výkon mokré spojky. Vhodný i pro katalyzátory</p>
-                <p>Olej na bázi Technosyntézy® pro čtyřtaktní motory - Ester technology - vyvinutý na esterové bázi. Snadnější řazení. Zlepšená střihová stabilita. Vyhovuje specifikacím JASO MA2, pro optimální výkon mokré spojky. Vhodný i pro katalyzátory.</p>
-                <p>Olej na bázi Technosyntézy® pro čtyřtaktní motory - Ester technology - vyvinutý na esterové bázi. Snadnější řazení. Zlepšená střihová stabilita. Vyhovuje specifikacím JASO MA2, pro optimální výkon mokré spojky. Vhodný i pro katalyzátory.</p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-1"></div>
-            <div class="col-12 col-lg-4">
-              <div class="product-detail__parameters">
-                <h2>Pro auta</h2>
-                <table> 
-                  <tbody> 
-                    <tr>
-                      <td>BMW</td>
-                      <td>X2</td>
-                    </tr>
-                    <tr>
-                      <td>BMW</td>
-                      <td>X2</td>
-                    </tr>
-                    <tr>
-                      <td>BMW</td>
-                      <td>X2</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="products-heading">
+            <div class="pagination" aria-label="Stránkování produktů">
+              <ul class="pagination__list">
+                <li class="pagination__item --active"><a class="pagination__link" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="container"> 
-          <h1>Příslušenství</h1>
+          <div class="products-count">Zobrazeno 12 z 160 produktů</div>
           <div class="products-grid">
             <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
                 <div class="product-card__top">    
@@ -494,169 +388,212 @@
                     <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
                   </form>
                 </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
+                      </div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
+                      </div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
+                      </div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
+                      </div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
+                  </form>
+                </div></a></div>
+            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
+                <div class="product-card__top">    
+                  <div class="product-card__thumb">
+                    <div class="product-card__tags">
+                      <div class="product-card__tagSingle">
+                        <div class="tag --sale">Akce</div>
+                      </div>
+                      <div class="product-card__tagSingle">   
+                        <div class="tag --new">Novinka</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --recommended">Doporučené</div>
+                      </div>
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --top">Top</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tagsRight">
+                      <div class="product-card__tagSingle"> 
+                        <div class="tag --circleSale">-18%</div>
+                      </div>
+                    </div>
+                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
+                  </div>
+                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
+                </div>
+                <div class="product-card__bottom">
+                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
+                    <div class="product-card__deliveryText">Skladem 10 ks</div>
+                  </div>
+                  <div class="product-card__price">
+                    <div class="product-card__priceOld">999 Kč</div>
+                    <div class="product-card__priceMain">899 Kč</div>
+                  </div>
+                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
+                  <form action="post"> 
+                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
+                  </form>
+                </div></a></div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="container"> 
-          <h1>Související</h1>
-          <div class="products-grid">
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
-                  </form>
-                </div></a></div>
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
-                  </form>
-                </div></a></div>
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
-                  </form>
-                </div></a></div>
-            <div class="product-card"> <a class="product-card__link" href="/produkt-detail.html">
-                <div class="product-card__top">    
-                  <div class="product-card__thumb">
-                    <div class="product-card__tags">
-                      <div class="product-card__tagSingle">
-                        <div class="tag --sale">Akce</div>
-                      </div>
-                      <div class="product-card__tagSingle">   
-                        <div class="tag --new">Novinka</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --recommended">Doporučené</div>
-                      </div>
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --top">Top</div>
-                      </div>
-                    </div>
-                    <div class="product-card__tagsRight">
-                      <div class="product-card__tagSingle"> 
-                        <div class="tag --circleSale">-18%</div>
-                      </div>
-                    </div>
-                    <picture class="product-card__imgWrap"><img class="lazyload product-card__img" src="/img/load-symbol.svg" data-src="/img/product-thumb-medium.jpg" alt="MOTUL 10W-40 4T 5100 ESTER 4L" title="MOTUL 10W-40 4T 5100 ESTER 4L" height="240" width="188"></picture>
-                  </div>
-                  <div class="product-card__title">MOTUL 10W-40 4T 5100 ESTER 4L</div>
-                </div>
-                <div class="product-card__bottom">
-                  <div class="product-card__delivery"><img src="/img/icons/check.svg" alt="Skladem">
-                    <div class="product-card__deliveryText">Skladem 10 ks</div>
-                  </div>
-                  <div class="product-card__price">
-                    <div class="product-card__priceOld">999 Kč</div>
-                    <div class="product-card__priceMain">899 Kč</div>
-                  </div>
-                  <div class="product-card__priceDph">613,22 Kč bez DPH</div>
-                  <form action="post"> 
-                    <button class="btn btn-ghost"><img src="/img/icons/cart.svg"> Do košíku</button>
-                  </form>
-                </div></a></div>
+          <div class="products-footer"><a class="btn" href="#">Načíst další produkty</a>
+            <div class="pagination" aria-label="Stránkování produktů">
+              <ul class="pagination__list">
+                <li class="pagination__item --active"><a class="pagination__link" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -94,23 +94,15 @@ html(lang=lang)
                                             td EAN čísla
                                             td 3374650017969
 
-
+                                .product-detail__subtitle Poptat produkt
                                 form.product-detail__form(method="post")
-
-                                    .product-detail__stock(id="stock" data-status="active") Skladem
-
-                                    .product-detail__price 
-                                        .product-detail__priceMain #[span(id="price-old") 1 200 Kč] #[span(id="price-main") 1 118 Kč]
-                                        .product-detail__priceVAT #[span(id="price-vat") 923,97 Kč] bez DPH
-
-                                    .product-detail__cta 
-                                        .product-detail__qty.stepper(id="qty-stepper" ) 
-                                            span.minus –
-                                            input(id="qty-stepper-input" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
-                                            span.plus +
-                                        .product-detail__button 
-                                            button.btn(name="add-to-cart") #[img(src="/img/icons/cart.svg" alt="Vložit do košíku")] Vložit do košíku
-                                   
+                                    .form-group     
+                                        label(for="cart-name") Jméno
+                                        input(type="text" id="cart-name" name="cart-name" required)
+                                    .form-group     
+                                        label(for="cart-name") Email
+                                        input(type="text" id="cart-name" name="cart-name" required)
+                                    button.btn() Poptat produkt
 
                         .col-12.col-lg-7
                             .product-detail__description(id="productDescription")

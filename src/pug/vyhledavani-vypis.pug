@@ -1,0 +1,48 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "produkt-vypis";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            .category-heading
+                
+                include components/_breadcrumbs.pug
+                section.page-heading
+                    .container
+                        h1 Vyhledávání
+                        div(id="pageDescription") 
+                            p Hledáte výraz krabička
+            section.products
+                .container
+
+
+                    .products-heading
+                        
+
+                        include components/_pagination.pug
+
+                    
+                    .products-count Zobrazeno 12 z 160 produktů
+
+                    .products-grid
+                        
+                        - for (var i=0; i<9; i++)
+                            include components/_product-card.pug
+
+
+                    .products-footer
+                        a.btn(href="#") Načíst další produkty
+                        include components/_pagination.pug
+
+
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  
