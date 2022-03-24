@@ -283,19 +283,38 @@
                       <td>3374650017969</td>
                     </tr>
                   </tbody>
-                </table>
-                <div class="product-detail__subtitle">Poptat produkt</div>
-                <form class="product-detail__form" method="post">
-                  <div class="form-group">    
-                    <label for="cart-name">Jméno</label>
-                    <input type="text" id="cart-name" name="cart-name" required>
+                </table><a class="btn --cart" data-micromodal-trigger="modal-product">Poptat produkt</a>
+                <div class="modal micromodal-slide" id="modal-product">
+                  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+                      <div class="modal__content" id="modal-product-content">
+                        <div class="modal__header">
+                          <h2 class="modal__title" id="modal-product-title">Poptat produkt</h2>
+                          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                        </div>
+                        <form class="product-detail__form" method="post"><br>
+                          <div class="form-group">    
+                            <label for="cart-name">Jméno</label>
+                            <input type="text" id="cart-name" name="cart-name" required>
+                          </div>
+                          <div class="form-group">    
+                            <label for="cart-tel">Telefon</label>
+                            <input type="tel" id="cart-tel" name="cart-tel" required>
+                          </div>
+                          <div class="form-group">    
+                            <label for="cart-mail">Email</label>
+                            <input type="email" id="cart-mail" name="cart-mail" required>
+                          </div>
+                          <div class="form-group">    
+                            <label for="cart-text">Text</label>
+                            <textarea id="cart-text" name="cart-text" rows="5" required></textarea>
+                          </div>
+                          <button class="btn --cart --fullWidth">Odeslat poptávku</button>
+                        </form>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">    
-                    <label for="cart-name">Email</label>
-                    <input type="text" id="cart-name" name="cart-name" required>
-                  </div>
-                  <button class="btn">Poptat produkt</button>
-                </form>
+                </div>
               </div>
             </div>
             <div class="col-12 col-lg-7">

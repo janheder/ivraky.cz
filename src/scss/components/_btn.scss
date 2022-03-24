@@ -29,9 +29,6 @@
     height: 10px;
 }
 
-.btn.--fullWidth{
-    width: 100%;
-}
 
 .btn.--green{
     background: $green-500;
@@ -82,4 +79,8 @@
     background: transparent;
     color: $gray-1000;
     border: 1px solid $gray-1000;
+}
+
+.btn.--fullWidth{
+    width: 100%;
 }

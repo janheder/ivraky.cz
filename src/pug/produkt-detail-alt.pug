@@ -94,15 +94,42 @@ html(lang=lang)
                                             td EAN čísla
                                             td 3374650017969
 
-                                .product-detail__subtitle Poptat produkt
-                                form.product-detail__form(method="post")
-                                    .form-group     
-                                        label(for="cart-name") Jméno
-                                        input(type="text" id="cart-name" name="cart-name" required)
-                                    .form-group     
-                                        label(for="cart-name") Email
-                                        input(type="text" id="cart-name" name="cart-name" required)
-                                    button.btn() Poptat produkt
+
+                                a.btn.--cart(data-micromodal-trigger="modal-product") Poptat produkt
+
+                                .modal.micromodal-slide(id="modal-product")
+
+                                    .modal__overlay(tabindex="-1" data-micromodal-close)
+
+
+                                        .modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-product-title")
+
+                                            .modal__content(id="modal-product-content")
+
+                                                .modal__header
+                                                    h2.modal__title(id="modal-product-title") Poptat produkt
+
+                                                    button.modal__close(aria-label="Close modal" data-micromodal-close)
+
+                                                form.product-detail__form(method="post")
+                                                    br
+                                                    .form-group     
+                                                        label(for="cart-name") Jméno
+                                                        input(type="text" id="cart-name" name="cart-name" required)
+                                                    .form-group     
+                                                        label(for="cart-tel") Telefon
+                                                        input(type="tel" id="cart-tel" name="cart-tel" required)
+                                                    .form-group     
+                                                        label(for="cart-mail") Email
+                                                        input(type="email" id="cart-mail" name="cart-mail" required)
+                                                    .form-group     
+                                                        label(for="cart-text") Text
+                                                        textarea(id="cart-text" name="cart-text" rows="5" required)
+
+
+                                                    button.btn.--cart.--fullWidth Odeslat poptávku
+
+
 
                         .col-12.col-lg-7
                             .product-detail__description(id="productDescription")
