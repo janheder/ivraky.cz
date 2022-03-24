@@ -31,6 +31,9 @@ html(lang=lang)
                     .row 
                         .col-12.col-md-8
                             .cart-table
+                            
+                                #cartSummaryToggle Souhrn objednávky
+
                                 form.cart-content__form(method="post" id="cart-form")
                                     .cart-table__title Zboží v košíku
 
@@ -106,6 +109,8 @@ html(lang=lang)
                         .col-12.col-md-4 
                             aside.cart-aside
                                 .cart-aside__title Shrnutí objednávky
+                                #cartSummaryClose 
+                                    img(src="/img/icons/cross-alt.svg")
                                 .cart-aside__table 
                                     .cart-aside__row 
                                         .cart-aside__table-th Cena zboží

@@ -2,7 +2,19 @@ var cart = document.getElementsByClassName('cart-content');
 if (cart.length>0){
 
 
+    var cartSummaryToggle = document.getElementById('cartSummaryToggle');
+    if (cartSummaryToggle){
+        document.getElementById('cartSummaryToggle').addEventListener('click', function() {
+            document.body.classList.toggle('--cart-summary-active');
+        });
+    }
 
+    var cartSummaryClose = document.getElementById('cartSummaryClose');
+    if (cartSummaryClose){
+        document.getElementById('cartSummaryClose').addEventListener('click', function() {
+            document.body.classList.toggle('--cart-summary-active');
+        });
+    }
 
     /* CART 1 */
 

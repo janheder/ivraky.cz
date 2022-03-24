@@ -434,4 +434,14 @@ body.--user-active .header-nav .user__dropdown{
 @media screen and (max-width: 991px){
     .header-nav .user__icon{
         display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    body.--search-active .search-wrapper .search-form{
+        flex-wrap: wrap;
+    }
+    .search__button{
+        width: 50%;
+        margin: 0;
+    }
 }

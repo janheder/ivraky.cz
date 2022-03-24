@@ -32,7 +32,7 @@ html(lang=lang)
                     .row 
                         .col-12.col-lg-8
                             .cart-table
-
+                                #cartSummaryToggle Souhrn objednávky
                                 form.cart-content__form(method="post" id="cart-form-user")
 
                                     .cart-table__title Vyplňte osobní údaje
@@ -170,6 +170,9 @@ html(lang=lang)
                         .col-12.col-lg-4 
                             aside.cart-aside
                                 .cart-aside__title Shrnutí objednávky
+                                #cartSummaryClose 
+                                    img(src="/img/icons/cross-alt.svg")
+                                    
                                 .cart-aside__table 
                                     .cart-aside__row 
                                         .cart-aside__table-th Cena zboží

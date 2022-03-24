@@ -287,3 +287,45 @@ section.products h1{
     border-bottom: 1px solid $gray-300;
     padding: 10px;
 }
+
+
+#cartSummaryToggle{
+    display: none;
+}
+#cartSummaryClose{
+    display: none;
+}
+
+@media screen and (max-width: 575px){
+    #cartSummaryToggle{
+        display: flex;
+        background: $yellow-500;
+        color: $gray-1000;
+        height: 54px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #cartSummaryClose{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background: $gray-100;
+        border-radius: 50%;
+
+        img{
+            height: 14px;
+        }
+    }
+}
+
+.product-card .btn img{
+    margin: 0;
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+}

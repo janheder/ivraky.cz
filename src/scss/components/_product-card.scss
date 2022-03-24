@@ -144,6 +144,13 @@
 }
 .product-card__bottom .btn{
     width: 100%;
+
+    &:hover{
+        color: $gray-1000;
+        box-shadow: none;
+        background: transparent;
+        border: 2px solid $gray-1000;
+    }
 }
 .product-card__btn{
     display: none;
