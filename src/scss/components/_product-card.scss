@@ -161,7 +161,7 @@
 @media screen and (min-width:992px){
     .product-card{
         &:hover, &:active, &:focus{
-            height: auto;
+            
 
             .product-card__link{
                 text-decoration: none;
@@ -169,6 +169,7 @@
                 position: relative;
                 left: 0;
                 right: 0;
+                height: 100%;
     
                 .product-card__description{
                     height: 42px;
