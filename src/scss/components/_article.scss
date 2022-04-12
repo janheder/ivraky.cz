@@ -58,3 +58,8 @@ article{
     font-style: italic;
     text-align: center;
 }
+.article-content a{
+    text-decoration: underline;
+    font-weight: 500;
+    color: $gray-900;
+}
