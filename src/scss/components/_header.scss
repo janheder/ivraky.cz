@@ -180,6 +180,7 @@ header{
     margin: 0 0px 0 0;
     cursor: pointer;
     position: relative;
+    flex-direction: column;
 }
 .header-nav .user.--active .user__title{
     font-weight: 500;
@@ -187,10 +188,14 @@ header{
 .header-nav .user__wrap{
     display: flex;
     flex-direction: column;
+    margin-top: -10px;
 }
 .header-nav .user__title{
-    color: $gray-900;
-    display: none;
+    color: $white;
+    max-width: 90px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
 }
 .header-nav .user__text{
     color: $gray-900;
@@ -237,7 +242,7 @@ header{
         border-right: 1px solid $gray-300;
         position: relative;
         transform: translateY(-6px) rotate(-45deg);
-        margin-left: 18px;
+        margin-left: 38px;
     }
     a{
         background: $white;

@@ -39,19 +39,23 @@ header
                 .user(data-micromodal-trigger="modal-login")
                     .user__icon
                         img(src="/img/icons/user-white.svg" alt="Přihlášení")
-                    div.user__title Přihlášení
 
-                // PUG
-                    .user.--active(id="userToggle")
-                        .user__icon
-                            img(src="/img/icons/user-white.svg" alt="Přihlášení")
-                        .user__dropdown(id="userDropdown")
-                            a(href="/uzivatelsky-ucet.html") Uživatelský účet
-                            a(href="/") Odhlásit
+              
+                .user.--active(id="userToggle")
+                    .user__icon
+                        img(src="/img/icons/user-white.svg" alt="Přihlášení")
+                    .user__wrap
+                        .user__title Petr Novákovák
+                    .user__dropdown(id="userDropdown")
+                        a(href="/uzivatelsky-ucet.html") Uživatelský účet
+                        a(href="/") Odhlásit
 
                 // HTML
                     <div class="user --active" id="userToggle">
                         <div class="user__icon"><img src="/img/icons/user-white.svg" alt="Přihlášení" /></div>
+                        <div class="user__wrap">
+                            <div class="user__title">Petr Novák</div>
+                        </div>
                         <div class="user__dropdown" id="userDropdown">
                             <a href="/uzivatelsky-ucet.html">Uživatelský účet</a>
                             <a href="/">Odhlásit</a>
