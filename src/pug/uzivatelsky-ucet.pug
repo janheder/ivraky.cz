@@ -39,8 +39,9 @@ html(lang=lang)
                                         | <input type="tel" id="register-tel" name="register-tel" required pattern="\d{1,15}">
                                     .form-group     
                                         label(for="register-password") Heslo
-                                        input(type="password" id="register-password" name="register-password")
+                                        | <input type="password" id="heslo" name="heslo" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$">
                                         span.show-password(id="showRegisterPassword" aria-label="Zobrazit heslo")
+                                        span.label-subtext (Minimum 8 znaků, musí obsahovat velké a malé písmena a alespoň 1 číslo)
 
 
                                     .form-subtitle Dodací údaje
@@ -69,35 +70,50 @@ html(lang=lang)
                                         label(for="register-fa-address" id="faToggle") Vyplnit fakturační adresu
                                         input(type="checkbox" name="register-fa-address" id="register-fa-address")
 
+
                                         .form-collapse
 
+
                                             .form-group     
-                                                label(for="register-fa-company") Název firmy
-                                                input(type="text" id="register-fa-company" name="register-fa-company" )
-                                            .form-group     
-                                                label(for="register-fa-ico") IČO
-                                                input(type="text" id="register-fa-ico" name="register-fa-ico" )
-                                            .form-group     
-                                                label(for="register-fa-dic") DIČ (nepovinné)
-                                                input(type="text" id="register-fa-dic" name="register-fa-dic")
+                                                label(for="register-fa-name") Jméno a příjmení
+                                                input(type="text" id="register-fa-name" name="register-fa-name")
+
+                                            .form-group.--checkbox
+                                                label(for="register-fa-company" id="faComToggle") Jsme firma a potřebujeme uvést také obchodní informace
+                                                input(type="checkbox" name="register-fa-company" id="register-fa-company")
+
+                                                .form-collapse
+
+                                                    .form-group     
+                                                        label(for="fakturacni_jmeno") Název firmy
+                                                        input(type="text" id="fakturacni_jmeno" name="fakturacni_jmeno")
+
+                                                    .form-group     
+                                                        label(for="register-fa-ico") IČO
+                                                        input(type="text" id="register-fa-ico" name="register-fa-ico")
+                                                        
+                                                    .form-group     
+                                                        label(for="dic") DIČ
+                                                        input(type="text" id="dic" name="dic")
+
+
                                             .form-group     
                                                 label(for="register-fa-street") Ulice
-                                                input(type="text" id="register-fa-street" name="register-fa-street" )
+                                                input(type="text" id="register-fa-street" name="register-fa-street")
                                             .form-group     
-                                                label(for="register-fa-street") Číslo popisné
-                                                input(type="text" id="register-fa-street-n" name="register-fa-street-n" )
+                                                label(for="register-fa-street-n") Číslo popisné
+                                                input(type="text" id="register-fa-street-n" name="register-fa-street-n")
                                             .form-group     
                                                 label(for="register-fa-city") Město/obec
-                                                input(type="text" id="register-fa-city" name="register-fa-city" )
+                                                input(type="text" id="register-fa-city" name="register-fa-city")
                                             .form-group     
                                                 label(for="register-fa-psc") PSČ
-                                                input(type="text" id="register-fa-psc" name="register-fa-psc" )
+                                                input(type="text" id="register-fa-psc" name="register-fa-psc")
                                             .form-group     
                                                 label(for="register-fa-state") Stát
-                                                select(name="register-fa-state" id="register-fa-state" )   
+                                                select(name="register-fa-state" id="register-fa-state")   
                                                     option(value="cz") Česká republika
                                                     option(value="sk") Slovensko
-
 
 
                                     .form-spacer 

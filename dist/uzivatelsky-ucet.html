@@ -241,8 +241,7 @@
                     <label for="register-tel">Telefon </label><input type="tel" id="register-tel" name="register-tel" required pattern="\d{1,15}">
                   </div>
                   <div class="form-group">    
-                    <label for="register-password">Heslo</label>
-                    <input type="password" id="register-password" name="register-password"><span class="show-password" id="showRegisterPassword" aria-label="Zobrazit heslo"></span>
+                    <label for="register-password">Heslo</label><input type="password" id="heslo" name="heslo" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$"><span class="show-password" id="showRegisterPassword" aria-label="Zobrazit heslo"></span><span class="label-subtext">(Minimum 8 znaků, musí obsahovat velké a malé písmena a alespoň 1 číslo)</span>
                   </div>
                   <div class="form-subtitle">Dodací údaje</div>
                   <div class="form-group">    
@@ -274,23 +273,33 @@
                     <input type="checkbox" name="register-fa-address" id="register-fa-address">
                     <div class="form-collapse">
                       <div class="form-group">    
-                        <label for="register-fa-company">Název firmy</label>
-                        <input type="text" id="register-fa-company" name="register-fa-company">
+                        <label for="register-fa-name">Jméno a příjmení</label>
+                        <input type="text" id="register-fa-name" name="register-fa-name">
                       </div>
-                      <div class="form-group">    
-                        <label for="register-fa-ico">IČO</label>
-                        <input type="text" id="register-fa-ico" name="register-fa-ico">
-                      </div>
-                      <div class="form-group">    
-                        <label for="register-fa-dic">DIČ (nepovinné)</label>
-                        <input type="text" id="register-fa-dic" name="register-fa-dic">
+                      <div class="form-group --checkbox">
+                        <label for="register-fa-company" id="faComToggle">Jsme firma a potřebujeme uvést také obchodní informace</label>
+                        <input type="checkbox" name="register-fa-company" id="register-fa-company">
+                        <div class="form-collapse">
+                          <div class="form-group">    
+                            <label for="fakturacni_jmeno">Název firmy</label>
+                            <input type="text" id="fakturacni_jmeno" name="fakturacni_jmeno">
+                          </div>
+                          <div class="form-group">    
+                            <label for="register-fa-ico">IČO</label>
+                            <input type="text" id="register-fa-ico" name="register-fa-ico">
+                          </div>
+                          <div class="form-group">    
+                            <label for="dic">DIČ</label>
+                            <input type="text" id="dic" name="dic">
+                          </div>
+                        </div>
                       </div>
                       <div class="form-group">    
                         <label for="register-fa-street">Ulice</label>
                         <input type="text" id="register-fa-street" name="register-fa-street">
                       </div>
                       <div class="form-group">    
-                        <label for="register-fa-street">Číslo popisné</label>
+                        <label for="register-fa-street-n">Číslo popisné</label>
                         <input type="text" id="register-fa-street-n" name="register-fa-street-n">
                       </div>
                       <div class="form-group">    
