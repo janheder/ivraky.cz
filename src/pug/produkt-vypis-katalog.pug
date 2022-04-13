@@ -8,27 +8,29 @@ html(lang=lang)
 
         include components/_header.pug
         include components/_nav.pug
+
+                                        
         main
-            include components/_breadcrumbs.pug
-            .page
+            .category-heading
+                
+                include components/_breadcrumbs.pug
                 section.page-heading
                     .container
-                        h1 náhradní díly pro vozidlo : BMW X2
-                section.page-content
-                    .container 
-                        .katalog-grid
-                            - for (var x=0; x<9; x++)
-                                .katalog-col
-                                    .katalog-title Motor
-
-                                    - for (var i=0; i<9; i++)
-                                        a.katalog-item(href="#")
-                                            .katalog-img-wrap
-                                                img.katalog-img(src="/img/product-thumb-small.jpg" alt=ProductName title=ProductName)
-                                            .katalog-name Filtr
-                                        
+                        h1 Náhradní díly pro vozidlo : BMW X2
 
 
+            section.products
+                .container
+                    .katalog-grid
+                        - for (var x=0; x<9; x++)
+                            .katalog-col
+                                .katalog-title Motor
+
+                                - for (var i=0; i<9; i++)
+                                    a.katalog-item(href="#")
+                                        .katalog-img-wrap
+                                            img.katalog-img(src="/img/product-thumb-small.jpg" alt=ProductName title=ProductName)
+                                        .katalog-name Filtr
 
 
         
