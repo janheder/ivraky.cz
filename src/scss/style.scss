@@ -228,8 +228,15 @@ section.products h1{
 }
 .katalog-name{
     margin-left: 20px;
+    flex-grow: 1;
+    text-align: left;
 }
-
+.katalog-qty{
+    background: $gray-100;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 0 5px;
+}
 .cart-aside__codeInner{
     display: flex;
 }
