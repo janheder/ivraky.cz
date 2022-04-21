@@ -344,11 +344,30 @@ section.products h1{
     padding-top: 56.25%;
     margin: 20px 0;
 }
-.resp-iframe {
+.resp-iframe, .resp-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+
+.modal__container.--cart {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.modal__container.--cart .modal__image{
+  padding: 0 30px;
+}
+
+.modal__container.--cart .modal__content {
+    padding: 40px 60px 40px 30px;
+    align-items: center;
+}
+.btn.--cart-dark{
+  height: 56px;
 }
