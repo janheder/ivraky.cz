@@ -378,3 +378,8 @@ section.products h1{
     justify-content: space-between;
     align-items:center;
 }
+
+
+.slider-item-ratio .slider-container.product-detail__carousel>*>* {
+    object-fit: contain;
+}
