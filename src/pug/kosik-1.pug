@@ -48,6 +48,11 @@ html(lang=lang)
                                                         a.cart-item-name(href="produkt-detail.html") #{ProductName}
                                                             .cart-item-stock.--available #[img(src="/img/icons/check.svg" alt="Skladem 10 ks")]Skladem 10 ks
 
+                                                        .cart-item-prices
+                                                            .cart-item-price-pc #[span 520] Kč/ks
+                                                            .cart-item-price #[span 520] Kč
+
+
                                                         .cart-item-stepper.stepper 
                                                             span.minus –
                                                             input(id="qty-stepper-input-1" class="num_items" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
@@ -56,10 +61,6 @@ html(lang=lang)
                                                         a.cart-item-remove(href="#")   
                                                             .cart-item-remove-icon
                                                                 img(src="/img/icons/cross-alt.svg" alt="Odstranit z košíku")
-
-                                                        .cart-item-prices
-                                                            .cart-item-price-pc #[span 520] Kč/ks
-                                                            .cart-item-price #[span 520] Kč
 
 
                                             .cart-item 
@@ -71,6 +72,10 @@ html(lang=lang)
                                                         a.cart-item-name(href="produkt-detail.html") #{ProductName}
                                                             .cart-item-stock.--available #[img(src="/img/icons/check.svg" alt="Skladem 10 ks")]Skladem 10 ks
 
+                                                        .cart-item-prices
+                                                            .cart-item-price-pc #[span 520] Kč/ks
+                                                            .cart-item-price #[span 520] Kč
+
                                                         .cart-item-stepper.stepper 
                                                             span.minus –
                                                             input(id="qty-stepper-input-2" class="num_items" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
@@ -79,10 +84,6 @@ html(lang=lang)
                                                         a.cart-item-remove(href="#")   
                                                             .cart-item-remove-icon
                                                                 img(src="/img/icons/cross-alt.svg" alt="Odstranit z košíku")
-
-                                                        .cart-item-prices
-                                                            .cart-item-price-pc #[span 520] Kč/ks
-                                                            .cart-item-price #[span 520] Kč
 
 
                                     .cart-aside__free-shipping(id="cartFreeShipping" data-price="5000") Nakupte ještě za 3000 Kč a máte dopravu zdarma

@@ -101,6 +101,9 @@
 .cart-item-stock.--available{
     color: $green-500;
 }
+.cart-item-prices{
+    padding-right: 20px;
+}
 .cart-item-price-pc{
     color: $gray-500;
     flex-shrink: 0;
