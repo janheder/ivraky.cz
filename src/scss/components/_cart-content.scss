@@ -387,9 +387,31 @@
 
 .cart-aside__free-shipping{
     background: rgba($green-500,0.1);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     font-weight: 500;
+}
+.cart-aside__free-shipping-alert{
+    color: white;
+    background: $red-500;
+    margin-bottom: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+}
+.cart-aside__free-shipping-alert::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: $red-500;
+    left: 30px;
+    top: -4px;
+    transform: translateX(-50%) rotate(45deg);
+    display: block;
+    z-index: -1;
 }
 .cart-aside__login{
     padding: 20px;
