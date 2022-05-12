@@ -76,7 +76,10 @@
 }
 .page-content li{
     padding: 8px 0;
-    font-weight: 500;
+    font-weight: 400;
+}
+.page-content li strong{
+    display: inline-block;
 }
 .page-content table{
     color: $gray-500;
