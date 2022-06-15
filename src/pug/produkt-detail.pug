@@ -78,10 +78,13 @@ html(lang=lang)
                                 h1.product-detail__title #{ProductName}
                                 .product-detail__code
                                     div Kód produktu: #[span(id="product-code") 123]
+                                    .product-detail__warranty Záruka 3 roky
                                     
                                 p.product-detail__text Olej motorový syntetický, balení 4 litry, specifikace: API SG/SH/SJ/SL/SM, JASO T 903: 2011, MA2... #[a(href="#productDescription") Číst více]
 
-
+                                .product-detail__status Tento produkt je ve stavu: Nový
+                                .product-detail__status.--used Tento produkt je ve stavu: Použitý
+                                .product-detail__status.--repas Tento produkt je ve stavu: Repasovaný
                                 
                                 .product-detail__subtitle Parametry
                                 table.table.product-detail__params
@@ -113,7 +116,9 @@ html(lang=lang)
                                             span.plus +
                                         .product-detail__button 
                                             button.btn(name="add-to-cart") #[img(src="/img/icons/cart.svg" alt="Vložit do košíku")] Vložit do košíku
-                                   
+
+                                    
+
 
                         .col-12.col-lg-7
                             .product-detail__description(id="productDescription")

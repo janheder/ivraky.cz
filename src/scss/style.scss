@@ -393,3 +393,42 @@ section.products h1{
 .modal__container.--cart  .modal__image img {
       height: auto;
   }
+
+ 
+.subcategories__img{
+    flex-shrink: 0;
+}
+.subcategories__single, .subcategories__link{
+    min-height: 54px;
+    height: 100%
+}
+.products-grid .product-card{
+    height: auto;
+}
+
+
+.product-detail__warranty{
+    display: flex;
+  
+  }
+  .product-detail__code{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-detail__status{
+  margin-bottom: 40px;
+    padding: 15px 10px;
+    display: flex;
+    border: 2px solid #399841;
+    background: rgba(57, 152, 65,0.05);
+    font-weight: 500;
+  }
+  .product-detail__status.--used{
+    border: 2px solid #FDDB01;
+    background: rgba(253, 219, 1,0.05);
+  }
+  .product-detail__status.--repas{
+    border: 2px solid #262626;
+    background: rgba(23, 23, 23,0.05);
+  }

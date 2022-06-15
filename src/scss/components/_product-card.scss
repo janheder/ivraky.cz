@@ -86,11 +86,13 @@
     padding: 0;
 }
 .product-card__description{
-    font-size: 14px;
+    font-size: 13px;
     color: $gray-500;
-    text-align: center;
-    height: 0;
+    text-align: left;
     overflow: hidden;
+    height: 48px;
+    margin-top: 15px;
+    line-height: 1.2;
 }
 .product-card__delivery{
     flex-grow: 1;
@@ -170,10 +172,7 @@
                 left: 0;
                 right: 0;
                 height: 100%;
-    
-                .product-card__description{
-                    height: 42px;
-                }
+
                 .product-card__delivery{
                     
                 }
