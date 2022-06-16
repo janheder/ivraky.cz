@@ -80,6 +80,10 @@ margin-top: 10px;
 display: inline-flex;
 font-size: 12px;
 }
+.product-card__status{
+    border: 1px solid #399841;
+    background: rgba(57, 152, 65,0.05);
+    }
 .product-card__status.--used{
 border: 1px solid #FDDB01;
 background: rgba(253,219,1,0.05);
